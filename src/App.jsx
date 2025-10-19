@@ -6,7 +6,14 @@ import {Login, Register, Chat} from './pages'
 function App() {
   return (
     <>
-Hello world
+      <Router>
+        <Routes>
+          <Route path='/' element={ <Login/> }/>
+          <Route path='/register' element={ <Register/> }/>
+          <Route path='/chat' element={ <Chat/> }/>
+          <Route/>
+        </Routes>
+      </Router>
     </>
   )
 }
