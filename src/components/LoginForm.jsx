@@ -33,7 +33,7 @@ const LoginForm = ({
       />
 
       {error && <UserFeedback feedback={error} />}
-      <Button type="submit" disabled={loading}>
+      <Button type="submit" disabled={loading} className={styles.btn}>
         {loading ? "Loggar in..." : "Logga in"}
       </Button>
     </form>
