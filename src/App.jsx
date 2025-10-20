@@ -2,8 +2,9 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { Login, Register, Chat } from './pages'
-import { SideNav } from './components/SideNav'
+// import { SideNav } from './components/SideNav'
 import { AuthProvider } from './context/AuthContext'
+import  ProtectedRoute  from './routes/ProtectedRoute'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Router>
         {/* <SideNav/>   behöver Auth */}
         <Routes>
-          <Route path='/login' element={ <Login/> }/>
+          <Route path='/' element={ <Login/> }/>
           <Route path='/register' element={ <Register/> }/>
           <Route path='/chat' element={
             <ProtectedRoute>

@@ -4,7 +4,7 @@ import UserFeedback  from './UserFeedback';
 import styles from './LoginForm.module.css';
 
 const LoginForm = ({ 
-  values = { email: '', password: '' },
+  values = { username: '', password: '' },
   onChange = () => {},
   onSubmit = () => {},
   loading = false,
